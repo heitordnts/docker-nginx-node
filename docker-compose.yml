@@ -1,6 +1,14 @@
 version: '3.7'
 
 services:
-  node:
-  
+  # node:
+  #   image: node:latest
+  #   container_name: nodeapp  
+    
   nginx:
+    image: nginx:latest
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+    container_name: nginx
+    ports:
+      - 8080:80
