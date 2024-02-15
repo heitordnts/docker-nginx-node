@@ -1,1 +1,1 @@
-WARN: sespere uns instantes para o app Node subir
+WARN: espere uns instantes para o app Node subir

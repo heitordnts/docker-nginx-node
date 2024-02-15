@@ -5,6 +5,9 @@ services:
     image: heitordkr/nodeapp
     container_name: nodeapp
     command: dockerize -wait tcp://db:3306 -timeout 20s node index.js
+    volumes:
+      - ./node:/usr/src/app
+      - /usr/src/app/node_modules
     depends_on:
       - db
     networks:
